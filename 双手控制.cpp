@@ -1,24 +1,24 @@
 /*
 
-Ö¸¼âÅĞ¶ÏµÄÌõ¼ş£º	1£º ²»ÊôÓÚÈËÌå
-			2£º ÊôÓÚÈËÌå£¬µ«ºÍÊÖ²¿¹Ø½Úµã²»ÔÚÍ¬Ò»Æ½Ãæ
-			3£º Óëµ½ÊÖ²¿¹Ø½ÚµãµÄ¾àÀëÔÚÄ³¸ö·¶Î§ÄÚ
-			4£º ÏÂÃæµÄÁ¬Ğø5¸öÏñËØ¶¼ÊôÓÚÈËÌå
+æŒ‡å°–åˆ¤æ–­çš„æ¡ä»¶ï¼š	1ï¼š ä¸å±äºäººä½“
+			2ï¼š å±äºäººä½“ï¼Œä½†å’Œæ‰‹éƒ¨å…³èŠ‚ç‚¹ä¸åœ¨åŒä¸€å¹³é¢
+			3ï¼š ä¸åˆ°æ‰‹éƒ¨å…³èŠ‚ç‚¹çš„è·ç¦»åœ¨æŸä¸ªèŒƒå›´å†…
+			4ï¼š ä¸‹é¢çš„è¿ç»­5ä¸ªåƒç´ éƒ½å±äºäººä½“
 
-±¸×¢£º	¸ù¾İÊó±êÎ»ÖÃµÄ»»Ëã¹«Ê½£¬²Ù×÷´°¿ÚÔ½´ó£¬Êó±ê¾ÍÔ½Æ½ÎÈ£¬µ«ÊÇ²Ù×÷´°¿ÚÌ«´óµÄ»°»áµ¼ÖÂÊÖ²¿¹Ø½ÚµãµÄÊ¶±ğ²»ÎÈ¶¨£¬ÒòÎªÖ¸¼âÊ¶±ğÊÇ»ùÓÚÊÖ²¿¹Ø½ÚµãµÄ,
-	ÕâÀïËµµÄ²»ÎÈ¶¨²»µ¥µ¥ÊÇ¹Ø½Úµã¶ªÊ§£¬¸ü³£¼ûµÄÊÇ¹Ø½ÚµãÅÜµ½²»ºÏÊÊµÄµØ·½£¬ÕâÑù»áµ¼ÖÂÊó±êÎ»ÖÃÍ»±ä£¬ÎÒ³¢ÊÔÓÃ¼ÓÒ»¸öÒÆ¶¯ËÙ¶ÈµÄãĞÖµÈ¥¿ØÖÆµ«ÊÇ·¢
-	ÏÖ×ö²»µ½£¬ÒòÎªÕâÖÖÇé¿öÏÂµÄÒÆ¶¯·ù¶ÈºÍÕı³£ÒÆ¶¯µÄ·ù¶ÈºÜÄÑÇø·Ö¿ªÀ´¡£»òĞí¿ÉÒÔ³¢ÊÔÒ»ÏÂÓÃËÙ¶ÈÈ¥¿ØÖÆ¡£
+å¤‡æ³¨ï¼š	æ ¹æ®é¼ æ ‡ä½ç½®çš„æ¢ç®—å…¬å¼ï¼Œæ“ä½œçª—å£è¶Šå¤§ï¼Œé¼ æ ‡å°±è¶Šå¹³ç¨³ï¼Œä½†æ˜¯æ“ä½œçª—å£å¤ªå¤§çš„è¯ä¼šå¯¼è‡´æ‰‹éƒ¨å…³èŠ‚ç‚¹çš„è¯†åˆ«ä¸ç¨³å®šï¼Œå› ä¸ºæŒ‡å°–è¯†åˆ«æ˜¯åŸºäºæ‰‹éƒ¨å…³èŠ‚ç‚¹çš„,
+	è¿™é‡Œè¯´çš„ä¸ç¨³å®šä¸å•å•æ˜¯å…³èŠ‚ç‚¹ä¸¢å¤±ï¼Œæ›´å¸¸è§çš„æ˜¯å…³èŠ‚ç‚¹è·‘åˆ°ä¸åˆé€‚çš„åœ°æ–¹ï¼Œè¿™æ ·ä¼šå¯¼è‡´é¼ æ ‡ä½ç½®çªå˜ï¼Œæˆ‘å°è¯•ç”¨åŠ ä¸€ä¸ªç§»åŠ¨é€Ÿåº¦çš„é˜ˆå€¼å»æ§åˆ¶ä½†æ˜¯å‘
+	ç°åšä¸åˆ°ï¼Œå› ä¸ºè¿™ç§æƒ…å†µä¸‹çš„ç§»åŠ¨å¹…åº¦å’Œæ­£å¸¸ç§»åŠ¨çš„å¹…åº¦å¾ˆéš¾åŒºåˆ†å¼€æ¥ã€‚æˆ–è®¸å¯ä»¥å°è¯•ä¸€ä¸‹ç”¨é€Ÿåº¦å»æ§åˆ¶ã€‚
 
-	Èç¹ûÕë¶ÔµÄÇé¿öÊÇÒ»µ©Ê¶±ğ³öÈËÌåÖ®ºó£¬ÈËÌå¾Í²»»á´ó·¶Î§ÒÆ¶¯£¬ÄÇÃ´¿ÉÒÔÖ»×öÒ»´Î²Ù×÷´°¿ÚµÄÊ¶±ğ£¬Ê¶±ğ³öÀ´Ö®ºó¾Í²»ÔÙ¸üĞÂ´°¿ÚµÄÎ»ÖÃ£¬ÕâÑù»á´ó·ù¶È
-	Ìá¸ßÊó±êÖ¸ÕëµÄÎÈ¶¨ĞÔ¡£
+	å¦‚æœé’ˆå¯¹çš„æƒ…å†µæ˜¯ä¸€æ—¦è¯†åˆ«å‡ºäººä½“ä¹‹åï¼Œäººä½“å°±ä¸ä¼šå¤§èŒƒå›´ç§»åŠ¨ï¼Œé‚£ä¹ˆå¯ä»¥åªåšä¸€æ¬¡æ“ä½œçª—å£çš„è¯†åˆ«ï¼Œè¯†åˆ«å‡ºæ¥ä¹‹åå°±ä¸å†æ›´æ–°çª—å£çš„ä½ç½®ï¼Œè¿™æ ·ä¼šå¤§å¹…åº¦
+	æé«˜é¼ æ ‡æŒ‡é’ˆçš„ç¨³å®šæ€§ã€‚
 
 
 
-Kinect°æ±¾:Kinect for Windows V2
-SDK°æ±¾:2.0
-OpenCV°æ±¾:3.0
+Kinectç‰ˆæœ¬:Kinect for Windows V2
+SDKç‰ˆæœ¬:2.0
+OpenCVç‰ˆæœ¬:3.0
 
-×îºó¸üĞÂÊ±¼ä£º2016-03-18
+æœ€åæ›´æ–°æ—¶é—´ï¼š2016-04-25
 
 */
 
@@ -34,10 +34,10 @@ OpenCV°æ±¾:3.0
 using	namespace	std;
 using	namespace	cv;
 
-const	double	OK_LEVEL = 0.15;	//ÅĞ¶Ï¸úÊÖÊÇ·ñÔÚÒ»¸öÆ½ÃæÉÏµÄÈİ´íÖµ,µ¥Î»Ã×
-const	int	HAND_UP = 150;		//ÊÖÕÆÉÏ·½¿ÉÄÜ´æÔÚÖ¸¼âµÄÇøÓò£¬µ¥Î»ºÁÃ×
-const	int	HAND_LEFT_RIGHT = 100;	//ÊÖÕÆ×óÓÒ·½¿ÉÄÜ´æÔÚÖ¸¼âµÄÇøÓò£¬µ¥Î»ºÁÃ×
-const	int	OK_MOUSE = 1;		//Êó±ê¿ªÊ¼ÒÆ¶¯µÄãĞÖµ£¬Ô½´óÔ½ÎÈ¶¨£¬Ô½Ğ¡Ô½¾«È·
+const	double	OK_LEVEL = 0.15;	//åˆ¤æ–­è·Ÿæ‰‹æ˜¯å¦åœ¨ä¸€ä¸ªå¹³é¢ä¸Šçš„å®¹é”™å€¼,å•ä½ç±³
+const	int	HAND_UP = 150;		//æ‰‹æŒä¸Šæ–¹å¯èƒ½å­˜åœ¨æŒ‡å°–çš„åŒºåŸŸï¼Œå•ä½æ¯«ç±³
+const	int	HAND_LEFT_RIGHT = 100;	//æ‰‹æŒå·¦å³æ–¹å¯èƒ½å­˜åœ¨æŒ‡å°–çš„åŒºåŸŸï¼Œå•ä½æ¯«ç±³
+const	int	OK_MOUSE = 1;		//é¼ æ ‡å¼€å§‹ç§»åŠ¨çš„é˜ˆå€¼ï¼Œè¶Šå¤§è¶Šç¨³å®šï¼Œè¶Šå°è¶Šç²¾ç¡®
 Vec3b	COLOR_TABLE[] = { Vec3b(255,0,0),Vec3b(0,255,0),Vec3b(0,0,255),Vec3b(255,255,255),Vec3b(0,0,0) };	
 enum	{BLUE,GREEN,RED,WHITE,BLACK};
 
@@ -65,45 +65,45 @@ int	main(void)
 	myDepthSource->get_FrameDescription(&myDescription);
 	myDescription->get_Height(&depthHeight);
 	myDescription->get_Width(&depthWidth);
-	myDepthSource->OpenReader(&myDepthReader);			//ÒÔÉÏÎªDepthÖ¡µÄ×¼±¸£¬Ö±½Ó¿ªºÃReader
+	myDepthSource->OpenReader(&myDepthReader);			//ä»¥ä¸Šä¸ºDepthå¸§çš„å‡†å¤‡ï¼Œç›´æ¥å¼€å¥½Reader
 
 
 	IBodyIndexFrameSource	* myBodyIndexSource = nullptr;
 	IBodyIndexFrameReader	* myBodyIndexReader = nullptr;
 	IBodyIndexFrame		* myBodyIndexFrame = nullptr;
 	mySensor->get_BodyIndexFrameSource(&myBodyIndexSource);
-	myBodyIndexSource->OpenReader(&myBodyIndexReader);		//ÒÔÉÏÎªBodyIndexÖ¡µÄ×¼±¸,Ö±½Ó¿ªºÃReader
+	myBodyIndexSource->OpenReader(&myBodyIndexReader);		//ä»¥ä¸Šä¸ºBodyIndexå¸§çš„å‡†å¤‡,ç›´æ¥å¼€å¥½Reader
 
 
 	IBodyFrameSource	* myBodySource = nullptr;
 	IBodyFrameReader	* myBodyReader = nullptr;
 	IBodyFrame		* myBodyFrame = nullptr;
 	mySensor->get_BodyFrameSource(&myBodySource);
-	myBodySource->OpenReader(&myBodyReader);			//ÒÔÉÏÎªBodyÖ¡µÄ×¼±¸£¬Ö±½Ó¿ªºÃReader
+	myBodySource->OpenReader(&myBodyReader);			//ä»¥ä¸Šä¸ºBodyå¸§çš„å‡†å¤‡ï¼Œç›´æ¥å¼€å¥½Reader
 
 	ICoordinateMapper	* myMapper = nullptr;
-	mySensor->get_CoordinateMapper(&myMapper);			//MaperµÄ×¼±¸
+	mySensor->get_CoordinateMapper(&myMapper);			//Maperçš„å‡†å¤‡
 
 
-	DepthSpacePoint		front = {0,0};				//ÓÃÀ´¼ÇÂ¼ÉÏÒ»´ÎÊó±êµÄÎ»ÖÃ
-	DepthSpacePoint		depthUpLeft = {1,1};			//²Ù×÷´°¿ÚµÄ×óÉÏ½ÇºÍÓÒÏÂ½Ç£¬Òª×¢ÒâÕâÁ½¸öXºÍX¡¢YºÍYµÄ²î»á×÷Îª³ıÊı£¬ËùÒÔ²»ÄÜ¶¼Îª0
+	DepthSpacePoint		front = {0,0};				//ç”¨æ¥è®°å½•ä¸Šä¸€æ¬¡é¼ æ ‡çš„ä½ç½®
+	DepthSpacePoint		depthUpLeft = {1,1};			//æ“ä½œçª—å£çš„å·¦ä¸Šè§’å’Œå³ä¸‹è§’ï¼Œè¦æ³¨æ„è¿™ä¸¤ä¸ªXå’ŒXã€Yå’ŒYçš„å·®ä¼šä½œä¸ºé™¤æ•°ï¼Œæ‰€ä»¥ä¸èƒ½éƒ½ä¸º0
 	DepthSpacePoint		depthDownRight = {0,0};			
 	while (1)
 	{
-		while (myDepthReader->AcquireLatestFrame(&myDepthFrame) != S_OK);		//¶ÁÈ¡DepthÊı¾İ
+		while (myDepthReader->AcquireLatestFrame(&myDepthFrame) != S_OK);		//è¯»å–Depthæ•°æ®
 		UINT	depthBufferSize = 0;
 		UINT16	* depthBuffer = nullptr;;
 		myDepthFrame->AccessUnderlyingBuffer(&depthBufferSize,&depthBuffer);
 
 
-		while (myBodyIndexReader->AcquireLatestFrame(&myBodyIndexFrame) != S_OK);	//¶ÁÈ¡BodyIndexÊı¾İ
+		while (myBodyIndexReader->AcquireLatestFrame(&myBodyIndexFrame) != S_OK);	//è¯»å–BodyIndexæ•°æ®
 		UINT	bodyIndexBufferSize = 0;
 		BYTE	* bodyIndexBuffer = nullptr;
 		myBodyIndexFrame->AccessUnderlyingBuffer(&bodyIndexBufferSize,&bodyIndexBuffer);
 		Mat	img(depthHeight,depthWidth,CV_8UC3);
 		draw_body(img,bodyIndexBuffer,depthHeight,depthWidth);
 	
-		while (myBodyReader->AcquireLatestFrame(&myBodyFrame) != S_OK);			//¶ÁÈ¡BodyÊı¾İ
+		while (myBodyReader->AcquireLatestFrame(&myBodyFrame) != S_OK);			//è¯»å–Bodyæ•°æ®
 		int	bodyBufferSize = 0;
 		myBodySource->get_BodyCount(&bodyBufferSize);
 		IBody	** bodyArray = new IBody *[bodyBufferSize];
@@ -112,21 +112,21 @@ int	main(void)
 		myBodyFrame->GetAndRefreshBodyData(bodyBufferSize,bodyArray);
 
 
-		for (int i = 0; i < bodyBufferSize; i++)					//±éÀú6¸öÈË
+		for (int i = 0; i < bodyBufferSize; i++)					//éå†6ä¸ªäºº
 		{
 			BOOLEAN		result = false;
 			if (bodyArray[i]->get_IsTracked(&result) == S_OK && result)
 			{
-				Joint	jointArray[JointType_Count];				//½«¹Ø½ÚµãÊä³ö£¬ÕıÊ½¿ªÊ¼´¦Àí
+				Joint	jointArray[JointType_Count];				//å°†å…³èŠ‚ç‚¹è¾“å‡ºï¼Œæ­£å¼å¼€å§‹å¤„ç†
 				bodyArray[i]->GetJoints(JointType_Count,jointArray);	
 														
 				if (jointArray[JointType_Neck].TrackingState != TrackingState_Tracked || jointArray[JointType_Head].TrackingState != TrackingState_Tracked)
 
 					continue;
 
-				bool	leftHand = false;						//ÓÃÀ´ÅĞ¶Ï×î¸ßµÄÊÖÖ¸ÊÇ×óÊÖ»¹ÊÇÓÒÊÖ
+				bool	leftHand = false;						//ç”¨æ¥åˆ¤æ–­æœ€é«˜çš„æ‰‹æŒ‡æ˜¯å·¦æ‰‹è¿˜æ˜¯å³æ‰‹
 
-												//¿ªÊ¼¼ì²âÓÒÊÖ
+												//å¼€å§‹æ£€æµ‹å³æ‰‹
 				DepthSpacePoint		highestPoint = {depthWidth - 1,depthHeight - 1};
 				if (jointArray[JointType_HandRight].TrackingState == TrackingState_Tracked)
 				{
@@ -135,9 +135,9 @@ int	main(void)
 					myMapper->MapCameraPointToDepthSpace(cameraHandRight, &depthHandRight);
 
 					for (int i = depthHandRight.Y; i > depthHandRight.Y - HAND_UP; i--)
-						for (int j = depthHandRight.X - HAND_LEFT_RIGHT; j < depthHandRight.X + HAND_LEFT_RIGHT; j++)	//È·¶¨Òª¼ì²éµÄ·¶Î§
+						for (int j = depthHandRight.X - HAND_LEFT_RIGHT; j < depthHandRight.X + HAND_LEFT_RIGHT; j++)	//ç¡®å®šè¦æ£€æŸ¥çš„èŒƒå›´
 						{
-							if (!depth_rage_check(j, i, depthWidth, depthHeight))					//ÅĞ¶Ï×ø±êÊÇ·ñºÏ·¨
+							if (!depth_rage_check(j, i, depthWidth, depthHeight))					//åˆ¤æ–­åæ ‡æ˜¯å¦åˆæ³•
 								continue;
 
 							int	index = i * depthWidth + j;
@@ -145,10 +145,10 @@ int	main(void)
 							DepthSpacePoint		depthTemp = { j,i };
 							myMapper->MapDepthPointToCameraSpace(depthTemp, depthBuffer[index], &cameraTemp);
 
-							if (bodyIndexBuffer[index] > 5 || (bodyIndexBuffer[index] <= 5 && !level_check(cameraHandRight, cameraTemp)))	//¿´´ËÏñËØÊÇ·ñ²»ÊôÓÚÈËÌå(Ö¸¼âÉÏ·½Ò»µã)£¬»òÕßÊôÓÚÈËÌåµ«ÊÇºÍÊÖ²»ÔÚÍ¬Ò»Æ½Ãæ(ÊÖÔÚĞØÇ°£©
+							if (bodyIndexBuffer[index] > 5 || (bodyIndexBuffer[index] <= 5 && !level_check(cameraHandRight, cameraTemp)))	//çœ‹æ­¤åƒç´ æ˜¯å¦ä¸å±äºäººä½“(æŒ‡å°–ä¸Šæ–¹ä¸€ç‚¹)ï¼Œæˆ–è€…å±äºäººä½“ä½†æ˜¯å’Œæ‰‹ä¸åœ¨åŒä¸€å¹³é¢(æ‰‹åœ¨èƒ¸å‰ï¼‰
 							{
 								bool	flag = true;
-								for (int k = 1; k <= 5; k++)	//¿´Ê±ºò´ËµãÏÂÃæÁ¬Ğø5¸öÏñËØ¶¼ÊôÓÚÈËÌå£¬ÇÒºÍÊÖÍóÔÚÍ¬Ò»Æ½Ãæ,ÇÒ¾àÀëºÏÊÊ
+								for (int k = 1; k <= 5; k++)	//çœ‹æ—¶å€™æ­¤ç‚¹ä¸‹é¢è¿ç»­5ä¸ªåƒç´ éƒ½å±äºäººä½“ï¼Œä¸”å’Œæ‰‹è…•åœ¨åŒä¸€å¹³é¢,ä¸”è·ç¦»åˆé€‚
 								{
 									int	index_check = (i + k) * depthWidth + j;
 									depthTemp.X = j;
@@ -166,13 +166,13 @@ int	main(void)
 								{
 									highestPoint.X = j;
 									highestPoint.Y = i;
-									leftHand = false;		//¼ÇÂ¼ÎªÓÒÊÖ
+									leftHand = false;		//è®°å½•ä¸ºå³æ‰‹
 								}
 							}
 						}
 				}
 
-				//¿ªÊ¼¼ì²â×óÊÖ,·½·¨Óë¼ì²âÓÒÊÖÊÖÖ¸ÊÇÒ»ÑùµÄ
+				//å¼€å§‹æ£€æµ‹å·¦æ‰‹,æ–¹æ³•ä¸æ£€æµ‹å³æ‰‹æ‰‹æŒ‡æ˜¯ä¸€æ ·çš„
 				if (jointArray[JointType_HandLeft].TrackingState == TrackingState_Tracked)
 				{
 					CameraSpacePoint	cameraHandLeft = jointArray[JointType_HandLeft].Position;
@@ -210,25 +210,25 @@ int	main(void)
 								{
 									highestPoint.X = j;
 									highestPoint.Y = i;
-									leftHand = true;	//¼ÇÂ¼Îª×óÊÖ
+									leftHand = true;	//è®°å½•ä¸ºå·¦æ‰‹
 								}
 							}
 						}
 				}
 
-				//ÒÔÏÂÎªÈ·¶¨²Ù×÷´°¿ÚµÄ×óÉÏ½ÇºÍÓÒÏÂ½Ç¡£ÒÔHead¹Ø½Úµ½Neck¹Ø½ÚµÄ¾àÀë×÷Îªµ¥Î»³¤¶È.×îºóÓÃµÄÉî¶ÈÊı¾İ£¬ËùÒÔÒª×ª»»
+				//ä»¥ä¸‹ä¸ºç¡®å®šæ“ä½œçª—å£çš„å·¦ä¸Šè§’å’Œå³ä¸‹è§’ã€‚ä»¥Headå…³èŠ‚åˆ°Neckå…³èŠ‚çš„è·ç¦»ä½œä¸ºå•ä½é•¿åº¦.æœ€åç”¨çš„æ·±åº¦æ•°æ®ï¼Œæ‰€ä»¥è¦è½¬æ¢
 				CameraSpacePoint	cameraNeck = jointArray[JointType_Neck].Position;
 				CameraSpacePoint	cameraHead = jointArray[JointType_Head].Position;
 				double	unite = sqrt(pow(cameraNeck.X - cameraHead.X, 2) + pow(cameraNeck.Y - cameraHead.Y, 2) + pow(cameraNeck.Z - cameraHead.Z, 2));
 
-				if (!leftHand)	//È·¶¨ÓÒÊÖµÄ²Ù×÷´°¿Ú
+				if (!leftHand)	//ç¡®å®šå³æ‰‹çš„æ“ä½œçª—å£
 				{
 					CameraSpacePoint	cameraUpLeft = { cameraNeck.X + unite * 0.5,cameraNeck.Y + unite * 3,cameraNeck.Z };
 					CameraSpacePoint	cameraDownRight = { cameraNeck.X + unite * 4,cameraNeck.Y + unite,cameraNeck.Z };
 					myMapper->MapCameraPointToDepthSpace(cameraUpLeft, &depthUpLeft);
 					myMapper->MapCameraPointToDepthSpace(cameraDownRight, &depthDownRight);
 				}
-				else		//È·¶¨×óÊÖµÄ²Ù×÷´°¿Ú
+				else		//ç¡®å®šå·¦æ‰‹çš„æ“ä½œçª—å£
 				{
 					CameraSpacePoint	cameraUpLeft = { cameraNeck.X - unite * 4,cameraNeck.Y + unite * 3,cameraNeck.Z };
 					CameraSpacePoint	cameraDownRight = { cameraNeck.X - unite * 0.5,cameraNeck.Y + unite,cameraNeck.Z };
@@ -236,28 +236,32 @@ int	main(void)
 					myMapper->MapCameraPointToDepthSpace(cameraDownRight, &depthDownRight);
 				}
 
-				int	windowWidth = (int)depthDownRight.X - (int)depthUpLeft.X;	//¼ÆËã²Ù×÷´°¿ÚµÄ³ß´ç
+				int	windowWidth = (int)depthDownRight.X - (int)depthUpLeft.X;	//è®¡ç®—æ“ä½œçª—å£çš„å°ºå¯¸
 				int	windowHeight = (int)depthDownRight.Y - (int)depthUpLeft.Y;
 
-				draw_window(img, depthUpLeft, depthDownRight);				//»­³ö²Ù×÷´°¿Ú
+				draw_window(img, depthUpLeft, depthDownRight);				//ç”»å‡ºæ“ä½œçª—å£
 
-				if (check_new_point(front, highestPoint, depthHeight, depthWidth))	//ÈÃÊó±êÅöµ½±ßÔµ¾ÍÍ£Ö¹£¬²»·´µ¯
+				bool	control = true;
+				if (check_new_point(front, highestPoint, depthHeight, depthWidth))	//è®©é¼ æ ‡ç¢°åˆ°è¾¹ç¼˜å°±åœæ­¢ï¼Œä¸åå¼¹
 				{
 					draw_circle(img, highestPoint.X, highestPoint.Y);
 					if (highestPoint.X < depthUpLeft.X)
-						highestPoint.X = depthUpLeft.X;
+						control = false;
 					if (highestPoint.X > depthDownRight.X)
-						highestPoint.X = depthDownRight.X;
+						control = false;
 					if (highestPoint.Y > depthDownRight.Y)
-						highestPoint.Y = depthDownRight.Y;
+						control = false;
 					if (highestPoint.Y < depthUpLeft.Y)
-						highestPoint.Y = depthUpLeft.Y;
+						control = false;
 					int	mouseX = fabs(highestPoint.X - depthUpLeft.X);
 					int	mouseY = fabs(highestPoint.Y - depthUpLeft.Y);
-					mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE, 65535 * mouseX / windowWidth, 65535 * mouseY / windowHeight, 0, 0);	//¼ÆËã¹«Ê½£ºĞ¡´°¿ÚµÄµã/Ğ¡´°¿Ú³ß´ç = ´ó´°¿ÚµÄµã/´ó
-					front = highestPoint;
+					if (control)
+					{
+						mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE, 65535 * mouseX / windowWidth, 65535 * mouseY / windowHeight, 0, 0);	//è®¡ç®—å…¬å¼ï¼šå°çª—å£çš„ç‚¹/å°çª—å£å°ºå¯¸ = å¤§çª—å£çš„ç‚¹/å¤§
+						front = highestPoint;
+					}
 				}
-				else									//¶¶¶¯Ïû³ı£¬Èç¹ûºÍÉÏÒ»Ö¡Ïà±ÈÒÆ¶¯µÄ·ù¶ÈĞ¡ÓÚãĞÖµ£¬Ôò±£³ÖÉÏÒ»Ö¡µÄ×´Ì¬
+				else									//æŠ–åŠ¨æ¶ˆé™¤ï¼Œå¦‚æœå’Œä¸Šä¸€å¸§ç›¸æ¯”ç§»åŠ¨çš„å¹…åº¦å°äºé˜ˆå€¼ï¼Œåˆ™ä¿æŒä¸Šä¸€å¸§çš„çŠ¶æ€
 				{
 					draw_circle(img, front.X, front.Y);
 					int	mouseX = fabs(front.X - depthUpLeft.X);
