@@ -1,8 +1,8 @@
 /*
-	Ïà±È¡°µ¥ÊÖ¿ØÖÆ¡±£¬´Ë´úÂë¹Ì¶¨ÁË²Ù×÷´°¿ÚµÄÎ»ÖÃ£¬²»ÔÙÊµÊ±¸üĞÂ´óĞ¡ºÍÎ»ÖÃ
+	ç›¸æ¯”â€œå•æ‰‹æ§åˆ¶â€ï¼Œæ­¤ä»£ç å›ºå®šäº†æ“ä½œçª—å£çš„ä½ç½®ï¼Œä¸å†å®æ—¶æ›´æ–°å¤§å°å’Œä½ç½®
 
-±¸×¢£º	µ±Êó±êµÄÒÆ¶¯ãĞÖµ£¨Éî¶È¿Õ¼äµÄÏñËØ£©Îª1¸öÏñËØÊ±£¬¶¶¶¯³Ì¶È¿ÉÒÔ½ÓÊÜ£¬µ«ÊÇ¾«¶È²»¹»¸ß£¬µ±Îª0Ê±£¬¾«¶È×ã¹»£¬µ«ÊÇ¶¶¶¯Ì«¾çÁÒ.
-	Ò²Ğí×ª»»ÎªÓÃ²ÊÉ«¿Õ¼äµÄ×ø±êÀ´¿ØÖÆÊó±ê»áºÃÒ»Ğ©£¬ÒòÎª²ÊÉ«¿Õ¼äµÄ·Ö±æÂÊ½Ï¸ß£¬µ«ÊÇÉî¶È¿Õ¼äÓë²ÊÉ«¿Õ¼äµÄ×ª»»²»ÊÇºÜ¾«È·.
+å¤‡æ³¨ï¼š	å½“é¼ æ ‡çš„ç§»åŠ¨é˜ˆå€¼ï¼ˆæ·±åº¦ç©ºé—´çš„åƒç´ ï¼‰ä¸º1ä¸ªåƒç´ æ—¶ï¼ŒæŠ–åŠ¨ç¨‹åº¦å¯ä»¥æ¥å—ï¼Œä½†æ˜¯ç²¾åº¦ä¸å¤Ÿé«˜ï¼Œå½“ä¸º0æ—¶ï¼Œç²¾åº¦è¶³å¤Ÿï¼Œä½†æ˜¯æŠ–åŠ¨å¤ªå‰§çƒˆ.
+	ä¹Ÿè®¸è½¬æ¢ä¸ºç”¨å½©è‰²ç©ºé—´çš„åæ ‡æ¥æ§åˆ¶é¼ æ ‡ä¼šå¥½ä¸€äº›ï¼Œå› ä¸ºå½©è‰²ç©ºé—´çš„åˆ†è¾¨ç‡è¾ƒé«˜ï¼Œä½†æ˜¯æ·±åº¦ç©ºé—´ä¸å½©è‰²ç©ºé—´çš„è½¬æ¢ä¸æ˜¯å¾ˆç²¾ç¡®.
 */
 
 
@@ -17,10 +17,10 @@
 using	namespace	std;
 using	namespace	cv;
 
-const	double	OK_LEVEL = 0.15;	//ÅĞ¶Ï¸úÊÖÊÇ·ñÔÚÒ»¸öÆ½ÃæÉÏµÄÈİ´íÖµ,µ¥Î»Ã×
-const	int	HAND_UP = 150;		//ÊÖÕÆÉÏ¿ÉÄÜ´æÔÚÖ¸¼âµÄÇøÓò£¬µ¥Î»ºÁÃ×
-const	int	HAND_LEFT_RIGHT = 100;	//ÊÖÕÆ×óÓÒ¿ÉÄÜ´æÔÚÖ¸¼âµÄÇøÓò£¬µ¥Î»ºÁÃ×
-const	int	OK_MOUSE = 0;		//Êó±ê¿ªÊ¼ÒÆ¶¯µÄãĞÖµ£¬Ô½´óÔ½ÎÈ¶¨£¬Ô½Ğ¡Ô½¾«È·
+const	double	OK_LEVEL = 0.15;	//åˆ¤æ–­è·Ÿæ‰‹æ˜¯å¦åœ¨ä¸€ä¸ªå¹³é¢ä¸Šçš„å®¹é”™å€¼,å•ä½ç±³
+const	int	HAND_UP = 150;		//æ‰‹æŒä¸Šå¯èƒ½å­˜åœ¨æŒ‡å°–çš„åŒºåŸŸï¼Œå•ä½æ¯«ç±³
+const	int	HAND_LEFT_RIGHT = 100;	//æ‰‹æŒå·¦å³å¯èƒ½å­˜åœ¨æŒ‡å°–çš„åŒºåŸŸï¼Œå•ä½æ¯«ç±³
+const	int	OK_MOUSE = 0;		//é¼ æ ‡å¼€å§‹ç§»åŠ¨çš„é˜ˆå€¼ï¼Œè¶Šå¤§è¶Šç¨³å®šï¼Œè¶Šå°è¶Šç²¾ç¡®
 Vec3b	COLOR_TABLE[] = { Vec3b(255,0,0),Vec3b(0,255,0),Vec3b(0,0,255),Vec3b(255,255,255),Vec3b(0,0,0) };
 enum { BLUE, GREEN, RED, WHITE, BLACK };
 
@@ -48,27 +48,27 @@ int	main(void)
 	myDepthSource->get_FrameDescription(&myDescription);
 	myDescription->get_Height(&depthHeight);
 	myDescription->get_Width(&depthWidth);
-	myDepthSource->OpenReader(&myDepthReader);			//ÒÔÉÏÎªDepthÖ¡µÄ×¼±¸£¬Ö±½Ó¿ªºÃReader
+	myDepthSource->OpenReader(&myDepthReader);			//ä»¥ä¸Šä¸ºDepthå¸§çš„å‡†å¤‡ï¼Œç›´æ¥å¼€å¥½Reader
 
 
 	IBodyIndexFrameSource	* myBodyIndexSource = nullptr;
 	IBodyIndexFrameReader	* myBodyIndexReader = nullptr;
 	IBodyIndexFrame		* myBodyIndexFrame = nullptr;
 	mySensor->get_BodyIndexFrameSource(&myBodyIndexSource);
-	myBodyIndexSource->OpenReader(&myBodyIndexReader);		//ÒÔÉÏÎªBodyIndexÖ¡µÄ×¼±¸,Ö±½Ó¿ªºÃReader
+	myBodyIndexSource->OpenReader(&myBodyIndexReader);		//ä»¥ä¸Šä¸ºBodyIndexå¸§çš„å‡†å¤‡,ç›´æ¥å¼€å¥½Reader
 
 
 	IBodyFrameSource	* myBodySource = nullptr;
 	IBodyFrameReader	* myBodyReader = nullptr;
 	IBodyFrame		* myBodyFrame = nullptr;
 	mySensor->get_BodyFrameSource(&myBodySource);
-	myBodySource->OpenReader(&myBodyReader);			//ÒÔÉÏÎªBodyÖ¡µÄ×¼±¸£¬Ö±½Ó¿ªºÃReader
+	myBodySource->OpenReader(&myBodyReader);			//ä»¥ä¸Šä¸ºBodyå¸§çš„å‡†å¤‡ï¼Œç›´æ¥å¼€å¥½Reader
 
 	ICoordinateMapper	* myMapper = nullptr;
-	mySensor->get_CoordinateMapper(&myMapper);			//MaperµÄ×¼±¸
+	mySensor->get_CoordinateMapper(&myMapper);			//Maperçš„å‡†å¤‡
 
-	DepthSpacePoint		front = { 0,0 };				//ÓÃÀ´¼ÇÂ¼ÉÏÒ»´ÎÊó±êµÄÎ»ÖÃ
-	DepthSpacePoint		depthUpLeft = { 1,1 };			//²Ù×÷´°¿ÚµÄ×óÉÏ½ÇºÍÓÒÏÂ½Ç£¬Òª×¢ÒâÕâÁ½¸öXºÍX¡¢YºÍYµÄ²î»á×÷Îª³ıÊı£¬ËùÒÔ²»ÄÜ¶¼Îª0
+	DepthSpacePoint		front = { 0,0 };				//ç”¨æ¥è®°å½•ä¸Šä¸€æ¬¡é¼ æ ‡çš„ä½ç½®
+	DepthSpacePoint		depthUpLeft = { 1,1 };			//æ“ä½œçª—å£çš„å·¦ä¸Šè§’å’Œå³ä¸‹è§’ï¼Œè¦æ³¨æ„è¿™ä¸¤ä¸ªXå’ŒXã€Yå’ŒYçš„å·®ä¼šä½œä¸ºé™¤æ•°ï¼Œæ‰€ä»¥ä¸èƒ½éƒ½ä¸º0
 	DepthSpacePoint		depthDownRight = { 0,0 };
 	bool	gotEdge = false;
 	while (1)
@@ -76,16 +76,16 @@ int	main(void)
 		while (myDepthReader->AcquireLatestFrame(&myDepthFrame) != S_OK);
 		UINT	depthBufferSize = 0;
 		UINT16	* depthBuffer = nullptr;;
-		myDepthFrame->AccessUnderlyingBuffer(&depthBufferSize, &depthBuffer);		//¶ÁÈ¡DepthÊı¾İ
+		myDepthFrame->AccessUnderlyingBuffer(&depthBufferSize, &depthBuffer);		//è¯»å–Depthæ•°æ®
 
-		while (myBodyIndexReader->AcquireLatestFrame(&myBodyIndexFrame) != S_OK);	//¶ÁÈ¡BodyIndexÊı¾İ
+		while (myBodyIndexReader->AcquireLatestFrame(&myBodyIndexFrame) != S_OK);	//è¯»å–BodyIndexæ•°æ®
 		UINT	bodyIndexBufferSize = 0;
 		BYTE	* bodyIndexBuffer = nullptr;
 		myBodyIndexFrame->AccessUnderlyingBuffer(&bodyIndexBufferSize, &bodyIndexBuffer);
 		Mat	img(depthHeight, depthWidth, CV_8UC3);
 		draw_body(img, bodyIndexBuffer, depthHeight, depthWidth);
 
-		while (myBodyReader->AcquireLatestFrame(&myBodyFrame) != S_OK);			//¶ÁÈ¡BodyÊı¾İ
+		while (myBodyReader->AcquireLatestFrame(&myBodyFrame) != S_OK);			//è¯»å–Bodyæ•°æ®
 		int	bodyBufferSize = 0;
 		myBodySource->get_BodyCount(&bodyBufferSize);
 		IBody	** bodyArray = new IBody *[bodyBufferSize];
@@ -93,15 +93,15 @@ int	main(void)
 			bodyArray[i] = nullptr;
 		myBodyFrame->GetAndRefreshBodyData(bodyBufferSize, bodyArray);
 
-		for (int i = 0; i < bodyBufferSize; i++)					//±éÀú6¸öÈË
+		for (int i = 0; i < bodyBufferSize; i++)					//éå†6ä¸ªäºº
 		{
 			BOOLEAN		result = false;
-			if (bodyArray[i]->get_IsTracked(&result) == S_OK && result)		//½«¹Ø½ÚµãÊä³ö£¬ÕıÊ½¿ªÊ¼´¦Àí
+			if (bodyArray[i]->get_IsTracked(&result) == S_OK && result)		//å°†å…³èŠ‚ç‚¹è¾“å‡ºï¼Œæ­£å¼å¼€å§‹å¤„ç†
 			{
 				Joint	jointArray[JointType_Count];
 				bodyArray[i]->GetJoints(JointType_Count, jointArray);
 
-				//ÒÔÏÂÎªÈ·¶¨²Ù×÷´°¿ÚµÄ×óÉÏ½ÇºÍÓÒÏÂ½Ç£¬×óÓÒÊÖµÄ´°¿ÚÎ»ÖÃ²»Í¬¡£ÒÔHead¹Ø½Úµ½Neck¹Ø½ÚµÄ¾àÀë×÷Îªµ¥Î»³¤¶È.×îºóÓÃµÄÉî¶ÈÊı¾İ£¬ËùÒÔÒª×ª»»
+				//ä»¥ä¸‹ä¸ºç¡®å®šæ“ä½œçª—å£çš„å·¦ä¸Šè§’å’Œå³ä¸‹è§’ï¼Œå·¦å³æ‰‹çš„çª—å£ä½ç½®ä¸åŒã€‚ä»¥Headå…³èŠ‚åˆ°Neckå…³èŠ‚çš„è·ç¦»ä½œä¸ºå•ä½é•¿åº¦.æœ€åç”¨çš„æ·±åº¦æ•°æ®ï¼Œæ‰€ä»¥è¦è½¬æ¢
 				if (!gotEdge)
 					if (jointArray[JointType_Neck].TrackingState == TrackingState_Tracked && jointArray[JointType_Head].TrackingState == TrackingState_Tracked)
 					{
@@ -117,7 +117,7 @@ int	main(void)
 
 
 
-				//Ö¸¼âÊ¶±ğ,¼ÇÂ¼×î³¤µÄÄÇ¸ùÊÖÖ¸µÄÖ¸¼â
+				//æŒ‡å°–è¯†åˆ«,è®°å½•æœ€é•¿çš„é‚£æ ¹æ‰‹æŒ‡çš„æŒ‡å°–
 				DepthSpacePoint		highestPoint = { depthWidth - 1,depthHeight - 1 };
 				if (jointArray[JointType_HandRight].TrackingState == TrackingState_Tracked)
 				{
@@ -125,21 +125,21 @@ int	main(void)
 					DepthSpacePoint		depthHandRight;
 					myMapper->MapCameraPointToDepthSpace(cameraHandRight, &depthHandRight);
 
-					//¿ªÊ¼²âÊÔÓÒÊÖÊÖÕÆÇøÓò
+					//å¼€å§‹æµ‹è¯•å³æ‰‹æ‰‹æŒåŒºåŸŸ
 					for (int i = depthHandRight.Y; i > depthHandRight.Y - HAND_UP; i--)
-						for (int j = depthHandRight.X - HAND_LEFT_RIGHT; j < depthHandRight.X + 100; j++)	//È·¶¨Òª¼ì²éµÄ·¶Î§
+						for (int j = depthHandRight.X - HAND_LEFT_RIGHT; j < depthHandRight.X + 100; j++)	//ç¡®å®šè¦æ£€æŸ¥çš„èŒƒå›´
 						{
-							if (!depth_rage_check(j, i, depthWidth, depthHeight))				//ÅĞºÏ·¨
+							if (!depth_rage_check(j, i, depthWidth, depthHeight))				//åˆ¤åˆæ³•
 								continue;
 							int	index = i * depthWidth + j;
 							CameraSpacePoint	cameraTemp;
 							DepthSpacePoint		depthTemp = { j,i };
 							myMapper->MapDepthPointToCameraSpace(depthTemp, depthBuffer[index], &cameraTemp);
 
-							if (bodyIndexBuffer[index] > 5 || (bodyIndexBuffer[index] <= 5 && !level_check(cameraHandRight, cameraTemp)))	//¿´´ËÏñËØÊÇ·ñ²»ÊôÓÚÈËÌå(Ö¸¼âÉÏ·½Ò»µã)£¬»òÕßÊôÓÚÈËÌåµ«ÊÇºÍÊÖ²»ÔÚÍ¬Ò»Æ½Ãæ£¨ĞØ£©
+							if (bodyIndexBuffer[index] > 5 || (bodyIndexBuffer[index] <= 5 && !level_check(cameraHandRight, cameraTemp)))	//çœ‹æ­¤åƒç´ æ˜¯å¦ä¸å±äºäººä½“(æŒ‡å°–ä¸Šæ–¹ä¸€ç‚¹)ï¼Œæˆ–è€…å±äºäººä½“ä½†æ˜¯å’Œæ‰‹ä¸åœ¨åŒä¸€å¹³é¢ï¼ˆèƒ¸ï¼‰
 							{
 								bool	flag = true;
-								for (int k = 1; k <= 5; k++)	//¿´Ê±ºò´ËµãÏÂÃæÁ¬Ğø5¸öÏñËØ¶¼ÊôÓÚÈËÌå£¬ÇÒºÍÊÖÍóÔÚÍ¬Ò»Æ½Ãæ,ÇÒ¾àÀëºÏÊÊ
+								for (int k = 1; k <= 5; k++)	//çœ‹æ—¶å€™æ­¤ç‚¹ä¸‹é¢è¿ç»­5ä¸ªåƒç´ éƒ½å±äºäººä½“ï¼Œä¸”å’Œæ‰‹è…•åœ¨åŒä¸€å¹³é¢,ä¸”è·ç¦»åˆé€‚
 								{
 									int	index_check = (i + k) * depthWidth + j;
 									depthTemp.X = j;
@@ -163,12 +163,12 @@ int	main(void)
 				}
 
 
-				int	windowWidth = (int)depthDownRight.X - (int)depthUpLeft.X;	//¼ÆËã²Ù×÷´°¿ÚµÄ³ß´ç
+				int	windowWidth = (int)depthDownRight.X - (int)depthUpLeft.X;	//è®¡ç®—æ“ä½œçª—å£çš„å°ºå¯¸
 				int	windowHeight = (int)depthDownRight.Y - (int)depthUpLeft.Y;
 				draw_line(img, depthUpLeft, depthDownRight);
 				if (check_new_point(front, highestPoint, depthHeight, depthWidth))
 				{
-					draw_circle(img, highestPoint.X, highestPoint.Y);		//Åöµ½±ßÔµ¾ÍÍ£Ö¹£¬²»·´µ¯
+					draw_circle(img, highestPoint.X, highestPoint.Y);		//ç¢°åˆ°è¾¹ç¼˜å°±åœæ­¢ï¼Œä¸åå¼¹
 					if (highestPoint.X < depthUpLeft.X)
 						highestPoint.X = depthUpLeft.X;
 					if (highestPoint.X > depthDownRight.X)
@@ -179,10 +179,10 @@ int	main(void)
 						highestPoint.Y = depthUpLeft.Y;
 					int	mouseX = fabs(highestPoint.X - depthUpLeft.X);
 					int	mouseY = fabs(highestPoint.Y - depthUpLeft.Y);
-					mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE, 65535 * mouseX / windowWidth, 65535 * mouseY / windowHeight, 0, 0);	//¼ÆËã¹«Ê½£ºĞ¡´°¿ÚµÄµã/Ğ¡´°¿Ú³ß´ç = ´ó´°¿ÚµÄµã/´ó
+					mouse_event(MOUSEEVENTF_ABSOLUTE | MOUSEEVENTF_MOVE, 65535 * mouseX / windowWidth, 65535 * mouseY / windowHeight, 0, 0);	//è®¡ç®—å…¬å¼ï¼šå°çª—å£çš„ç‚¹/å°çª—å£å°ºå¯¸ = å¤§çª—å£çš„ç‚¹/å¤§
 					front = highestPoint;
 				}
-				else							//Èç¹ûºÍÉÏÒ»Ö¡Ïà±ÈÒÆ¶¯µÄ·ù¶ÈĞ¡ÓÚãĞÖµ£¬Ôò±£³ÖÉÏÒ»Ö¡µÄ×´Ì¬
+				else							//å¦‚æœå’Œä¸Šä¸€å¸§ç›¸æ¯”ç§»åŠ¨çš„å¹…åº¦å°äºé˜ˆå€¼ï¼Œåˆ™ä¿æŒä¸Šä¸€å¸§çš„çŠ¶æ€
 				{
 					draw_circle(img, front.X, front.Y);
 					int	mouseX = fabs(front.X - depthUpLeft.X);
