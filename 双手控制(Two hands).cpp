@@ -108,7 +108,10 @@ int	main(void)
 		myBodySource->get_BodyCount(&bodyBufferSize);
 		IBody	** bodyArray = new IBody *[bodyBufferSize];
 		for (int i = 0; i < bodyBufferSize; i++)
+		{
 			bodyArray[i] = nullptr;
+			bodyArray[i]->Release();
+		}
 		myBodyFrame->GetAndRefreshBodyData(bodyBufferSize,bodyArray);
 
 
